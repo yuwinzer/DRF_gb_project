@@ -4,7 +4,7 @@ import './App.css';
 import axios from 'axios';
 import Menu from './components/Menu';
 import UserList from "./components/User";
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 class App extends React.Component {
     constructor(props) {
