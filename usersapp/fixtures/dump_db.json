@@ -1,1 +1,142 @@
-[{"model": "usersapp.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$320000$PU8dWTDH1PpZhN69Pby6P0$CSBLANnMokGvBbmlXZQZFX2lbYVY3ef4XcLTKkUeQco=", "last_login": "2021-12-14T16:27:29.520Z", "is_superuser": true, "is_staff": true, "is_active": true, "date_joined": "2021-12-14T16:27:03.590Z", "first_name": "", "last_name": "", "username": "admin", "email": "x@mail.com", "groups": [], "user_permissions": []}}, {"model": "usersapp.user", "pk": 2, "fields": {"password": "123", "last_login": null, "is_superuser": false, "is_staff": false, "is_active": true, "date_joined": "2021-12-14T16:27:29Z", "first_name": "sdffg", "last_name": "sdfgfs", "username": "testuser1", "email": "fsdff@mail.com", "groups": [], "user_permissions": []}}, {"model": "usersapp.user", "pk": 3, "fields": {"password": "123", "last_login": null, "is_superuser": false, "is_staff": false, "is_active": true, "date_joined": "2021-12-14T16:28:05Z", "first_name": "ggsdfg", "last_name": "hffg", "username": "testuser2", "email": "lllkjkjk@mail.com", "groups": [], "user_permissions": []}}]
+[
+  {
+    "model": "authtoken.token",
+    "pk": "8763f6ef13b1e8bab8c1968a436e2026cc4e1abc",
+    "fields": {
+      "user": 1,
+      "created": "2022-01-01T12:51:17.997Z"
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$PU8dWTDH1PpZhN69Pby6P0$CSBLANnMokGvBbmlXZQZFX2lbYVY3ef4XcLTKkUeQco=",
+      "last_login": "2022-01-01T18:19:59.584Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-12-14T16:27:03.590Z",
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "x@mail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 2,
+    "fields": {
+      "password": "123",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-12-14T16:27:29Z",
+      "username": "testuser1",
+      "first_name": "sdffg",
+      "last_name": "sdfgfs",
+      "email": "fsdff@mail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 3,
+    "fields": {
+      "password": "123",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-12-14T16:28:05Z",
+      "username": "testuser2",
+      "first_name": "ggsdfg",
+      "last_name": "hffg",
+      "email": "lllkjkjk@mail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "todoapp.project",
+    "pk": 1,
+    "fields": {
+      "name": "Стулья",
+      "repo_link": "",
+      "is_active": true,
+      "involved_users": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "todoapp.project",
+    "pk": 2,
+    "fields": {
+      "name": "Столы",
+      "repo_link": "",
+      "is_active": true,
+      "involved_users": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "todoapp.project",
+    "pk": 3,
+    "fields": {
+      "name": "третий проект",
+      "repo_link": "",
+      "is_active": true,
+      "involved_users": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "todoapp.todo",
+    "pk": 1,
+    "fields": {
+      "name": "пробная",
+      "task": "проверка",
+      "related_project": 1,
+      "author": 2,
+      "date_created": "2021-12-19T22:52:19Z",
+      "date_updated": "2021-12-19T22:52:19Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "todoapp.todo",
+    "pk": 2,
+    "fields": {
+      "name": "вторая",
+      "task": "стол людовика",
+      "related_project": 2,
+      "author": 1,
+      "date_created": "2022-01-01T12:57:04Z",
+      "date_updated": "2022-01-01T12:57:04Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "todoapp.todo",
+    "pk": 3,
+    "fields": {
+      "name": "третий",
+      "task": "тр",
+      "related_project": 3,
+      "author": 1,
+      "date_created": "2022-01-01T18:47:14Z",
+      "date_updated": "2022-01-01T18:47:14Z",
+      "is_active": true
+    }
+  }
+]
