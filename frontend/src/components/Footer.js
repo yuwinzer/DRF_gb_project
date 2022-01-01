@@ -1,5 +1,5 @@
 const Footer = () => (
-    <div className="footer">
+    <div className="footer bgd">
         <p>Юрий Москалев © 2021</p>
     </div>
 );

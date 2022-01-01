@@ -9,7 +9,7 @@ import UserList from "./components/User";
 import Footer from './components/Footer';
 import TodoList from "./components/Todo";
 import ProjectPage from "./components/Project";
-import LoginForm from './components/Auth.js';
+import LoginForm from './components/Auth';
 
 let username = 'Пользователь'
 

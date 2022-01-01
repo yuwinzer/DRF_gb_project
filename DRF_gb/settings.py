@@ -44,14 +44,14 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_filters',
-    'rest_framework_simplejwt',
-    # 'rest_framework.authtoken'
+    # 'rest_framework_simplejwt',
+    'rest_framework.authtoken',
 
     'usersapp',
     'todoapp',
 ]
 
-AUTH_USER_MODEL = 'usersapp.User'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -62,7 +62,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'DRF_gb.urls'
@@ -143,8 +142,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-
+AUTH_USER_MODEL = 'usersapp.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
