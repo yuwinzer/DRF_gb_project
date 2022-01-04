@@ -23,7 +23,7 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <div className="win">
+            <div className="win bgd">
                 <form className="msg" onSubmit={(event) => this.handleSubmit(event)}>
                     <input className="txtb" type="text" name="login" placeholder="логин"
                            value={this.state.login} onChange={(event) => this.handleChange(event)}/>
