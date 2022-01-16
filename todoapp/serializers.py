@@ -18,3 +18,12 @@ class TodoSerializer(ModelSerializer):
     class Meta:
         model = Todo
         fields = '__all__'
+
+
+class TodoSerializerBase(ModelSerializer):
+    related_project = ProjectSerializer()
+    # author = UserModelSerializer()
+
+    class Meta:
+        model = Todo
+        fields = '__all__'

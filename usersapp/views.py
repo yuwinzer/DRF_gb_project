@@ -10,6 +10,7 @@ from .serializers import UserModelSerializer
 class UserReadUpdateViewSet(mixins.ListModelMixin,
                             mixins.RetrieveModelMixin,
                             mixins.UpdateModelMixin,
+                            mixins.CreateModelMixin,
                             viewsets.GenericViewSet):
     queryset = User.objects.all().order_by('id')
     serializer_class = UserModelSerializer
