@@ -8,5 +8,15 @@ class UserModelSerializer(ModelSerializer):
         fields = ('id',
                   'username',
                   'first_name',
+                  'last_name',)
+
+
+class UserModelSerializerV1(ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id',
+                  'username',
+                  'first_name',
                   'last_name',
-                  'email',)
+                  'is_superuser',
+                  'is_staff',)
