@@ -47,11 +47,14 @@ INSTALLED_APPS = [
     # 'rest_framework_simplejwt',
     'rest_framework.authtoken',
     'drf_yasg',
-
+    'graphene_django',
     'usersapp',
     'todoapp',
 ]
 
+GRAPHENE = {
+    "SCHEMA": "DRF_gb.schema.schema"
+}
 
 
 MIDDLEWARE = [
