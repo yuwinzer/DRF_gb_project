@@ -14,7 +14,7 @@ const UserItem = ({user}) => {
 
 const UserList = ({users}) => {
     return (
-        <table className="win bgd">
+        <table className="win bgd w">
             <thead>
                 <tr>
                     <th>User name</th>
