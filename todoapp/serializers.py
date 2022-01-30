@@ -4,14 +4,18 @@ from usersapp.serializers import UserModelSerializer
 
 
 class ProjectSerializer(ModelSerializer):
-    involved_users = UserModelSerializer(many=True)
+    # involved_users = UserModelSerializer(many=True)
 
     class Meta:
         model = Project
         fields = '__all__'
 
 
-class TodoSerializer(ModelSerializer):
+class ProjectGetSerializer(ProjectSerializer):
+    involved_users = UserModelSerializer(many=True)
+
+
+class TodoGetSerializer(ModelSerializer):
     related_project = ProjectSerializer()
     author = UserModelSerializer()
 
@@ -21,7 +25,7 @@ class TodoSerializer(ModelSerializer):
 
 
 class TodoSerializerBase(ModelSerializer):
-    related_project = ProjectSerializer()
+    # related_project = ProjectSerializer()
     # author = UserModelSerializer()
 
     class Meta:

@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils import timezone
+
 
 
 class Project(models.Model):
@@ -28,8 +28,8 @@ class Todo(models.Model):
     author = models.ForeignKey(to='usersapp.User',
                                on_delete=models.SET('удален'),
                                verbose_name='автор')
-    date_created = models.DateTimeField(default=timezone.now, verbose_name='дата создания')
-    date_updated = models.DateTimeField(default=timezone.now, verbose_name='дата изменения')
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
+    date_updated = models.DateTimeField(auto_now=True, verbose_name='дата изменения')
     is_active = models.BooleanField(verbose_name='активно', default=True)
 
     def __str__(self):

@@ -1,7 +1,7 @@
 const Footer = () => (
-    <div className="footer bgd">
-        <p>Юрий Москалев © 2021</p>
-    </div>
+  <footer>
+    <p>Юрий Москалев © 2022</p>
+  </footer>
 );
 
 export default Footer;
